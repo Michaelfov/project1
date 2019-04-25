@@ -1,0 +1,17 @@
+<html class="cookindex">
+  <h1 class="cookmenu">All Cooking Menu</h1>
+  <nav class="createmenu">
+    <%= link_to "Create Menu", new_cooking_path %>
+  </nav>
+
+  <div class="allmenu">
+  <% @cookings.each do |cooking| %>
+
+    <p><%= link_to cooking.title, cooking_path(cooking.id) %> <image_tag work.image.></p>
+
+
+    <%= yield %>
+
+  <% end %>
+  </div>
+</html>

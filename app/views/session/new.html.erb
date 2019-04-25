@@ -1,0 +1,16 @@
+<html class="signpage-bg">
+<h1 class="signpage">Sign In</h1>
+
+<div class="input">
+<%= flash[:error] %>
+
+<%= form_tag login_path do %>
+  <%= label_tag :email %>
+  <%=email_field_tag :email %>
+
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+
+  <%= submit_tag "Login In" %>
+<% end %>
+</div>

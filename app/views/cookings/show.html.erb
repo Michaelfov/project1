@@ -1,0 +1,17 @@
+<h1><%= @cooking.title %></h1>
+
+<%= image_tag @cooking.image, :class => 'menu_image' if @cooking.image.present? %>
+
+<ul class="showpage">
+  <li>Title: <%= @cooking.title %></li>
+  <li>Material: <%= @cooking.materials.pluck(:name).join(', ') %></li>
+  <li>Ingredients: <%= @cooking.sauces.pluck(:name).join(', ') %></li>
+  <li>Step: <%= @cooking.step %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Cooking Menu', edit_cooking_path(@cooking.id) %>
+  <% if @current_user.admin? %>
+    <%= link_to 'Delete This Menu', cooking_path(@cooking.id), :method => 'delete', :data => {:confirm => 'Are you sure?'}%>
+  <% end %>
+</div>

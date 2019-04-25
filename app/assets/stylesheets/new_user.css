@@ -1,0 +1,23 @@
+.sign_up-bg {
+  background-image: url('https://files.stocky.ai/uploads/2018/12/image-Cooking-background-stocky-ai-25631230.jpg') ;
+  background-size: cover;
+  background-position: auto;
+
+}
+.sign {
+  text-align: center;
+  color: darkblue;
+  font-size: 40px;
+}
+
+.introduction {
+  text-align: center;
+  color: #4B0082;
+  font-size: 30px;
+}
+
+.sign_input {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 200px;
+}

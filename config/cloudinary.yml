@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dvlrdruiv
+  api_key: '869568864715874'
+  api_secret: uhdHTSXeNR6MfMgn5g10l23jfBM
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dvlrdruiv
+  api_key: '869568864715874'
+  api_secret: uhdHTSXeNR6MfMgn5g10l23jfBM
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dvlrdruiv
+  api_key: '869568864715874'
+  api_secret: uhdHTSXeNR6MfMgn5g10l23jfBM
+  enhance_image_tag: true
+  static_file_support: false

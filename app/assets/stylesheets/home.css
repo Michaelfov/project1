@@ -1,0 +1,32 @@
+.homepage {
+  background-image:
+  linear-gradient(to right, rgba(255,206,0,0.2), rgba(255,255,170,0.5)),
+  url('https://backgroundcheckall.com/wp-content/uploads/2017/12/vintage-cooking-background-10.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+
+.home {
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  color: purple;
+  font-size: 40px;
+
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Cabin Sketch', cursive;
+  color: purple;
+  font-size: 50px;
+}
+
+.link {
+  text-align: right;
+}
+
+.cookingmenu {
+  text-align: center;
+  font-size: 30px;
+}

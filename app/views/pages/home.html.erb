@@ -1,0 +1,12 @@
+<html class="homepage">
+  <h1 class="home">Home</h1>
+  <h2 class="sign">Welcome to the genius cooking website</h2>
+  <p class="introduction">This web will help people all over the world sharing their methods in cooking all kinds of food! Do you enjoy to share your menu? Join now!</p>
+  <% if @current_user.present? %>
+    <h2 class="welcome">Welcome back <%= @current_user.email[0, @current_user.email.index('@')].capitalize %> <h2>
+
+    <h3 class="cookingmenu"><%= link_to 'Cooking Menu', cookings_path %></h3>
+
+
+  <% end %>
+</html>
