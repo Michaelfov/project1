@@ -11,7 +11,7 @@
   <li>Step: <%= @cooking.step %></li>
   <% if @cooking.user.present? %>
   <div class="blockline"></div>
-    <li>Created by: <%= @cooking.user.email[0, @current_user.email.index('@')].capitalize %></li>
+    <li>Created by: <%= @cooking.user.email[0, @cooking.user.email.index('@')].capitalize %></li>
   <% else %>
     <li>Created by: Admin</li>
   <% end %>
