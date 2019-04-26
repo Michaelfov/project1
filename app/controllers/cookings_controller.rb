@@ -26,6 +26,7 @@ class CookingsController < ApplicationController
     cooking = Cooking.new
     cooking.title = params[:title]
     cooking.image = params[:image]
+    cooking.user_id = @current_user.id
     cooking.materials << Material.find(params[:material_id])
     cooking.sauces << Sauce.find(params[:sauce_id])
     cooking.step = params[:step]
@@ -41,6 +42,7 @@ class CookingsController < ApplicationController
     cooking = Cooking.find params[:id]
     cooking.title = params[:title]
     cooking.image = params[:image]
+    cooking.user_id = @current_user.id
     cooking.materials << Material.find(params[:material_id])
     cooking.sauces << Sauce.find(params[:sauce_id])
     cooking.step = params[:step]

@@ -1,16 +1,26 @@
-<h1><%= @cooking.title %></h1>
+<h1 class="show_title"><%= @cooking.title %></h1>
 
-<%= image_tag @cooking.image, :class => 'menu_image' if @cooking.image.present? %>
-
-<ul class="showpage">
-  <li>Title: <%= @cooking.title %></li>
+<div class="show_image">
+  <%= image_tag @cooking.image, :class => 'menu_image' if @cooking.image.present? %>
+</div>
+<ul class="show_page">
   <li>Material: <%= @cooking.materials.pluck(:name).join(', ') %></li>
+  <div class="blockline"></div>
   <li>Ingredients: <%= @cooking.sauces.pluck(:name).join(', ') %></li>
+  <div class="blockline"></div>
   <li>Step: <%= @cooking.step %></li>
+  <% if @cooking.user.present? %>
+  <div class="blockline"></div>
+    <li>Created by: <%= @cooking.user.email[0, @current_user.email.index('@')].capitalize %></li>
+  <% else %>
+    <li>Created by: Admin</li>
+  <% end %>
 </ul>
 
 <div class="controls">
-  <%= link_to 'Edit Cooking Menu', edit_cooking_path(@cooking.id) %>
+  <% if @current_user.id == @cooking.user.id %>
+    <%= link_to 'Edit Cooking Menu', edit_cooking_path(@cooking.id) %>
+  <% end %>
   <% if @current_user.admin? %>
     <%= link_to 'Delete This Menu', cooking_path(@cooking.id), :method => 'delete', :data => {:confirm => 'Are you sure?'}%>
   <% end %>

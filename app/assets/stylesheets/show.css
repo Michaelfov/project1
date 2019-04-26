@@ -1,8 +1,22 @@
-.showpage {
-  text-align: left;
-  margin-top: 10px;
+
+.show_title {
+  text-align: center;
 }
 
-.menu_image {
-  vertical-align:middle;
+.show_page {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  list-style: none;
+
+}
+
+.show_image {
+  text-align: center;
+}
+
+.blockline {
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
