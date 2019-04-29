@@ -18,10 +18,13 @@
 </ul>
 
 <div class="controls">
-  <% if @current_user.id == @cooking.user.id %>
-    <%= link_to 'Edit Cooking Menu', edit_cooking_path(@cooking.id) %>
-  <% end %>
-  <% if @current_user.admin? %>
-    <%= link_to 'Delete This Menu', cooking_path(@cooking.id), :method => 'delete', :data => {:confirm => 'Are you sure?'}%>
+  <% if @cooking.user.present? %>
+    <% if @current_user.id == @cooking.user.id %>
+      <%= link_to 'Edit Cooking Menu', edit_cooking_path(@cooking.id) %>
+    <% end %>
+    <% if @current_user.admin? %>
+      <%= link_to 'Delete This Menu', cooking_path(@cooking.id), :method => 'delete', :data => {:confirm => 'Are you sure?'}%>
+    <% end %>
+    <% else %>
   <% end %>
 </div>

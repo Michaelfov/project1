@@ -5,7 +5,9 @@
   background-size: cover;
   text-align: center;
 }
-
+.no_account {
+  text-align: center;
+}
 
 .home {
   text-align: center;

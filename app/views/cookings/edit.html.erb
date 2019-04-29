@@ -4,7 +4,7 @@
 <form class="form" action="<%= cooking_path(@cooking.id) %>" method="post">
   <input type="hidden" name="_method" value="patch">
   <label class="menu_name">
-    Name:
+    Title:
     <input type="text" name="title" value="<%= @cooking.title %>" required autofocus>
   </label>
   <label class="menu_image">

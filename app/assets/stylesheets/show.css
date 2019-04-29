@@ -15,6 +15,11 @@
   text-align: center;
 }
 
+.menu_image {
+  weight: 300px;
+  height: 300px;
+}
+
 .blockline {
   height: 10px;
 	border: 0;
