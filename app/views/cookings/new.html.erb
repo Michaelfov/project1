@@ -4,25 +4,30 @@
 <form class="form" action="<%= cookings_path(@cooking.id) %>" method="post">
   <label class="menu_name">
     Title:
+    <br/>
     <input type="text" name="title" value="<%= @cooking.title %>" required autofocus>
   </label>
-  <label class="menu_image">
+  <label class="menu_image_url">
     Image:
+    <br/>
     <input type="url" name="image" value="<%= @cooking.image %>" placeholder="http://...">
   </label>
 
   <label class="materials">
     Materials:
+    <br/>
     <%= select_tag(:material_id, options_for_select(Material.pluck(:name, :id)), {class:"span6"}) %>
   </label>
 
   <label class="sauces">
     Ingredients:
+    <br/>
     <%= select_tag(:sauce_id, options_for_select(Sauce.pluck(:name, :id)), {class:"span5"}) %>
   </label>
 
   <label class="step">
     Steps:
+    <br/>
     <textarea type="text" value="<%= @cooking.step %>" name="step" rows="20" cols="40">
     </textarea>
   </label>
