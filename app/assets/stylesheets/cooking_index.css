@@ -1,8 +1,7 @@
 .cookindex {
-  background-image:
+  background:
   linear-gradient(to bottom, rgba(80,204,245,0.5), rgba(80,204,245,0.5)),
-  url('https://thumbs.dreamstime.com/z/icon-chef-creative-design-44499748.jpg');
-
+  url('https://thumbs.dreamstime.com/z/icon-chef-creative-design-44499748.jpg') no-repeat;
   background-size: cover;
 }
 .cookmenu {

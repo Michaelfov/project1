@@ -1,5 +1,6 @@
 .create_menu-bg {
-  background-image: url('https://image.freepik.com/free-vector/coloured-cooking-background-with-rounded-frame_1132-13.jpg');
+  background:
+  url('https://image.freepik.com/free-vector/coloured-cooking-background-with-rounded-frame_1132-13.jpg') no-repeat;
   background-size: cover;
   background-position: left;
 }

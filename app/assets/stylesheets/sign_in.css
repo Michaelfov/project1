@@ -1,5 +1,6 @@
 .signpage-bg {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeD1VTfsQ-gShW5aQAyRl_p_ZtJG_yak7jOXVLwb-Srna3wdq7');
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeD1VTfsQ-gShW5aQAyRl_p_ZtJG_yak7jOXVLwb-Srna3wdq7') no-repeat;
+  background-size:cover;
 }
 
 .signpage {
